@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9773eb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background-color: #66c5fc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #f0d90a;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<!-- logo -->
+<img src="image.png" alt="Logo" style="width: 1000px; height: 400px; margin: 0 auto; display: block;">
+
+<body>
+    <div class="container">
+    <h1>Student Registration Form</h1>
+
+<form>
+
+<label>Name:</label>
+<input type="text" name="name" value="Vanswel Savatia"><br><br>
+
+<label>Email Address:</label>
+<input type="email" name="email" value="vanaweslsavatia@gmail.com"><br><br>
+
+<label>Date of Birth:</label>
+<input type="date" name="dob" value="2005-09-18"><br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender"> Female<br><br>
+
+<label>Main Course:</label>
+<select name="course">
+
+<option>Computer Science</option>
+<option>Business IT</option>
+<option>Information Technology</option>
+<option>Data Science</option>
+</select><br><br>
+
+<label>Hobbies:</label>
+<select name="hobbies" multiple>
+    <option>Reading</option>
+    <option>Swimming</option>
+    <option>Painting</option>
+    <option>Playing Guitar</option>
+</select><br><br>
+
+
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
